@@ -5,13 +5,22 @@
 	<title>Page Title</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' type='text/css' media='screen' href='css/newtab.css'>
-	<script src='js/newtab.js'></script>
+	<script src='js/clock.js'></script>
 </head>
 <body>
 
-	<img class="background"src="https://source.unsplash.com/random/1920x1080/?modern." alt="background image" >
 
-	<script src="newtab.js" class="time"></script>
+	<div>
+
+		<div id="clock"></div>
+		<div id="greeting" onclick="editName()">Hello, <span id="userName">John</span></div>
+		<input type="text" id="nameInput" onblur="saveName()" />
+		<div id="quote"></div>
+		<script src="clock.js"></script>
+
+
+	</div>
+
 
 
 
