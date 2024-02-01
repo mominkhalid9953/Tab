@@ -1,22 +1,24 @@
-body{
-	display: flex;
-	height: 100vh;
-	width: 100vh;
-	flex-wrap: wrap;
-	justify-content: center;
+body {
 	margin: 0;
-}
-
-.background{
+	overflow: hidden;
 	display: flex;
-	flex-wrap: wrap;
-
-	width: 100%vh;
-
-
-
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 }
+
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
 .time{
-	display: flex;
-	flex-wrap: wrap;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	z-index: 1;
 }
