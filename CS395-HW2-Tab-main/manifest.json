@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "author": "Momin Khalid",
+    "name": "Quotes",
+    "version": "0.1",
+    "description": "This extension overrides the default new tab, and adds quotes to the front page.",
+    "icons": {
+      "128": "assets/icon.png"
+    },
+    "chrome_url_overrides": {
+      "newtab": "newtab.html"
+    }
+  }
