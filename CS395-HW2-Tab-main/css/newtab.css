@@ -1,5 +1,22 @@
 body{
 	display: flex;
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vh;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+}
+
+.background{
+	display: flex;
+	flex-wrap: wrap;
+
+	width: 100%vh;
+
+
+
+}
+.time{
+	display: flex;
+	flex-wrap: wrap;
 }
