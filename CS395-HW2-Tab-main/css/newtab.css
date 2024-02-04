@@ -6,10 +6,10 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	height: 100vh;
-	background: url('https://source.unsplash.com/random/1920x1080/?modern');
+	background: url('https://source.unsplash.com/random/1920x1080/?city');
 }
 
-.content-center {
+.content-center {   
 	
 	display: flex;
 	flex-direction: column;
