@@ -6,7 +6,7 @@
 		var minutes = now.getMinutes();
 		var seconds = now.getSeconds();
 
-		// Add leading zero if necessary
+	
 		hours = hours < 10 ? '0' + hours : hours;
 		minutes = minutes < 10 ? '0' + minutes : minutes;
 		seconds = seconds < 10 ? '0' + seconds : seconds;
@@ -17,7 +17,7 @@
 		var clockElement = document.getElementById('clock');
 		clockElement.innerHTML = timeString;
 
-		// Update to show full time string on hover
+
 		clockElement.onmouseenter = function() {
 			clockElement.innerHTML = fullTimeString;
 		};
@@ -58,7 +58,7 @@
 		}
 	}
 
-	// Quote fetching functionality
+	// Quote
 	function loadNameAndQuote() {
 		var storedName = localStorage.getItem('userName');
 		var userNameElement = document.getElementById('userName');
@@ -73,7 +73,7 @@
 			.catch(error => console.error('Error fetching quote:', error));
 	}
 
-	// Pomodoro timer functionality
+	// Pomodoro timer
 	let isRunning = false;
 	let timerDuration = 25 * 60;
 	let timerId = null;
@@ -108,18 +108,18 @@
 
 	function resetTimer() {
 		pauseTimer();
-		timerDuration = 25 * 60; // Reset to 25 minutes
+		timerDuration = 25 * 60;
 		updateDisplay(timerDuration);
 	}
 
-	// Initialize everything on window load
+
 	window.onload = function() {
 		loadNameAndQuote();
 		initClock();
 		document.getElementById('userName').ondblclick = editName;
 		document.getElementById('nameInput').onblur = saveName;
 
-		// Set up Pomodoro timer controls
+
 		document.getElementById('start-timer').addEventListener('click', startTimer);
 		document.getElementById('pause-timer').addEventListener('click', pauseTimer);
 		document.getElementById('reset-timer').addEventListener('click', resetTimer);
