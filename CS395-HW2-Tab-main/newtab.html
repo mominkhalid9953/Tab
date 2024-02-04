@@ -18,12 +18,13 @@
 	</div>
 	
 	
-    <div class="content-center">
-        <div id="clock"></div>
-		<div id="greeting">Hello, <span id="userName">John</span></div>
-        <input type="text" id="nameInput" onblur="saveName()" style="display: none;" />
-    </div>
-    <div id="quote">Your inspirational quote here.</div>
+	<div class="content-center">
+		<div id="clock"></div>
+		<div id="greeting">Hello, <span id="userName" onclick="editName()">Your Name</span></div>
+		<input type="text" id="nameInput" onblur="saveName()" style="display: none;" />
+		
+	</div>
+	<div id="quote">Your inspirational quote here.</div>
 </body>
 
 
