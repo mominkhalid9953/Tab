@@ -1,17 +1,24 @@
 body {
-	margin: 0;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	background: url('https://source.unsplash.com/random/1920x1080/?modern.') center/cover no-repeat;
-
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: url('https://source.unsplash.com/random/1920x1080/?modern') center/cover no-repeat;
 }
 
+.content-center {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
 
 #clock{
-
 	text-align: center;
 	color: white;
 	font-size: 2em;
@@ -37,9 +44,8 @@ body {
 }
 
 #quote {
-	font-size: 1em;
-	color:white;
-	text-align: center;
-	margin-top: top;
-	margin-bottom: 1px;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    margin: 50px 0; /* Adds some space around the quote */
 }
