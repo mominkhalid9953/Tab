@@ -1,42 +1,41 @@
 body {
-    margin: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    background: url('https://source.unsplash.com/random/1920x1080/?modern') center/cover no-repeat;
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+	background: url('https://source.unsplash.com/random/1920x1080/?modern') center/cover no-repeat;
 }
 
 .content-center {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
 }
 
 #clock{
 	text-align: center;
 	color: white;
-	font-size: 2em;
+	font-size: 3.5vw;
 	z-index: 1;
 }
 
 #greeting {
-	font-size: 1.5em;
+	font-size: 2.5vw;
 	text-align: center;
 	margin-top: 10px;
 	cursor: pointer;
 	color: white;
-
 }
 
 #nameInput {
 	display: flex;
-	font-size: 1.5em;
+	font-size: 2.5vw;
 	text-align: center;
 	border: none;
 	background: none;
@@ -44,8 +43,46 @@ body {
 }
 
 #quote {
-    font-size: 1em;
-    color: white;
-    text-align: center;
-    margin: 50px 0; /* Adds some space around the quote */
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+	margin: 50px 0;
+}
+
+
+
+.pomodoro-timer {
+	position:fixed;
+	top: 20px;
+	right: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 10;
+}
+
+#timer-display {
+	font-size: 3vw;
+	
+	color: white;
+	background-color: black;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 2vw;
+	margin-bottom: 10px;
+}
+
+.timer-controls button {
+	margin: 0 5px;
+	padding: 10px;
+	font-size: 1.8vw;
+	cursor: pointer;
+	background-color: #444;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.timer-controls button:hover {
+	background-color: #666;
 }

@@ -8,9 +8,19 @@
 	<script src='js/newtab.js'></script>
 </head>
 <body>
+	<div class="pomodoro-timer">
+		<div id="timer-display">25:00</div>
+		<div class="timer-controls">
+			<button id="start-timer">Start</button>
+			<button id="pause-timer">Pause</button>
+			<button id="reset-timer">Reset</button>
+		</div>
+	</div>
+	
+	
     <div class="content-center">
         <div id="clock"></div>
-        <div id="greeting" onclick="editName()">Hello, <span id="userName">John</span></div>
+		<div id="greeting">Hello, <span id="userName">John</span></div>
         <input type="text" id="nameInput" onblur="saveName()" style="display: none;" />
     </div>
     <div id="quote">Your inspirational quote here.</div>
